@@ -6,6 +6,9 @@
 # "/home/da_user/etcd-certificates".
 etcd_ca_conf_directory: "{{ '~/etcd-certificates' | expanduser }}"
 
+# Set to yes to copy certificates from remote hosts.
+remote_src_etcd_ca_conf_directory: no
+
 # etcd version
 etcd_version: "3.4.14"
 # Port where etcd listening for clients
